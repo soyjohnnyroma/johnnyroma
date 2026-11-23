@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root{--paper:#f7f7f4;--white:#fff;--ink:#171717;--muted:#777873;--line:#deded8;--soft:#ecece7;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.site-header{height:86px;padding:0 max(5.5vw,24px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(23,23,23,.08);background:rgba(247,247,244,.94);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:11px;font:600 15px "Manrope",sans-serif;letter-spacing:-.045em}
+.brand img{width:34px;height:34px;object-fit:contain;border-radius:50%;background:#111}
+nav{display:flex;align-items:center;gap:35px;font-size:12px;color:#555750}
+nav a{transition:color .2s}nav a:hover,.text-link:hover{color:#999}
+.nav-contact{color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:4px}
+.menu-toggle,.mobile-nav{display:none}
+.section-wrap{width:min(var(--max),89%);margin-inline:auto}
+.hero{min-height:690px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:7%;padding-top:72px;padding-bottom:90px;position:relative}
+.hero-copy{padding:25px 0 35px}
+.eyebrow{font-size:10px;letter-spacing:.13em;text-transform:lowercase;color:#74766f;margin:0 0 28px;display:flex;align-items:center;gap:11px}
+.eyebrow-line{height:1px;width:27px;background:#8c8d86;display:inline-block}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:"Manrope","DM Sans",sans-serif;font-weight:500;letter-spacing:-.065em;text-transform:lowercase}
+h1{font-size:clamp(43px,5.1vw,72px);line-height:1.07;margin-bottom:28px}
+h1 span{color:#85867f}
+.hero-description{max-width:440px;color:#666861;font-size:16px;line-height:1.8;margin-bottom:34px}
+.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;gap:25px;padding:15px 19px;font-size:12px;transition:transform .2s,background .2s}
+.button:hover{transform:translateY(-2px)}
+.button-dark{background:#171717;color:white}
+.button-dark:hover{background:#343434}
+.text-link{font-size:12px;border-bottom:1px solid #aaa;padding-bottom:5px;transition:color .2s}
+.hero-clock{display:flex;align-items:baseline;gap:13px;margin-top:39px;color:#777873}
+.clock-label{font-size:9px;letter-spacing:.1em;text-transform:lowercase}
+.clock-time{font:500 23px/1 "Manrope",sans-serif;letter-spacing:-.055em;font-variant-numeric:tabular-nums;color:#252622}
+.hero-note{margin:24px 0 0;color:#8a8b84;font-size:10px;letter-spacing:.06em}
+.hero-image{margin:0;position:relative;max-width:470px;justify-self:end;width:100%}
+.hero-image img{display:block;width:100%;height:525px;object-fit:cover;object-position:center 30%;filter:grayscale(1)}
+.hero-image figcaption{font-size:10px;color:#777;margin-top:12px;letter-spacing:.03em}
+.hero-image figcaption span{color:#aaa}
+.hero-index{position:absolute;right:0;bottom:32px;font-size:10px;color:#999}
+.intro-band{background:#eeeee9;padding:65px 0}
+.intro-inner{display:grid;grid-template-columns:1fr 2fr;gap:8%;align-items:start}
+.intro-inner .eyebrow{margin-top:9px}
+.intro-statement{font:500 clamp(25px,3.3vw,42px)/1.3 "Manrope",sans-serif;letter-spacing:-.06em;margin:0;max-width:750px}
+.intro-statement span{color:#8b8c85}
+.content-section{padding-top:130px;padding-bottom:130px}
+.section-heading{display:grid;grid-template-columns:1fr 1fr;column-gap:8%;align-items:start;margin-bottom:65px}
+.section-heading .eyebrow{grid-column:1/-1;margin-bottom:24px}
+.section-heading h2{font-size:clamp(36px,4.2vw,56px);line-height:1.12;margin:0}
+.section-lead{max-width:380px;color:#777971;font-size:14px;line-height:1.8;align-self:end;margin:0}
+.service-list{border-top:1px solid var(--line)}
+.service-item{display:grid;grid-template-columns:70px 1fr 30px;gap:25px;align-items:start;padding:31px 0;border-bottom:1px solid var(--line)}
+.service-number{font-size:10px;color:#999;margin-top:8px}
+.service-item h3{font-size:24px;margin:0 0 8px}
+.service-item p{font-size:13px;color:#777971;max-width:580px;margin:0;line-height:1.8}
+.service-arrow{font-size:18px;color:#888;margin-top:6px}
+.projects-section{background:#efefeb;padding:125px 0 115px}
+.projects-heading{margin-bottom:55px}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.project-card{background:#fafaf8;padding:17px;min-width:0}
+.project-dark{background:#1d1e1c;color:#f4f4f0}
+.project-top{display:flex;justify-content:space-between;gap:10px;font-size:9px;color:#888;letter-spacing:.04em}
+.project-dark .project-top{color:#aaa}
+.status{border:1px solid #d7d7d1;padding:3px 7px;white-space:nowrap}
+.project-dark .status{border-color:#555}
+.project-art{height:245px;margin:18px 0 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;overflow:hidden;background:#e5e5df;color:#1b1b1b}
+.project-art>span{font:500 76px/.95 "Manrope",sans-serif;letter-spacing:-.09em}
+.project-art i{font-style:normal;font-size:9px;letter-spacing:.1em;margin-top:13px;text-transform:lowercase;color:#777}
+.art-koffi{background:#282a27;color:#f2f2ec}
+.art-koffi>span{font-size:105px;letter-spacing:-.12em}
+.art-koffi i{color:#b7b9b1}
+.art-vereda{background:linear-gradient(135deg,#d8ded2,#b8c1b0)}
+.art-vereda>span{font-size:58px}
+.art-carlos{background:#e4e1dc}
+.art-carlos>span{font-size:105px}
+.art-maranatha{background:#dce0df}
+.art-maranatha>span{font-size:100px}
+.project-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:25px}
+.project-wide .project-top{grid-column:1/-1}
+.project-wide .project-art{height:250px}
+.art-assistants{background:#d8d7d1}
+.art-assistants>span{font-size:48px;line-height:1.05;text-align:center}
+.project-bottom h3{font-size:21px;margin:0 0 7px}
+.project-bottom p{font-size:12px;line-height:1.7;color:#777971;margin:0;max-width:470px}
+.project-dark .project-bottom p{color:#b8b9b2}
+.projects-footnote{font-size:10px;color:#85867f;margin:25px 0 0}
+.about-section{display:grid;grid-template-columns:.88fr 1fr;gap:11%;align-items:center;padding-top:135px;padding-bottom:135px}
+.about-photo{max-width:430px}
+.about-photo img{width:100%;height:490px;object-fit:cover;object-position:center 28%;filter:grayscale(1);display:block}
+.about-copy h2{font-size:clamp(38px,4vw,54px);line-height:1.12;margin:0 0 27px}
+.about-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:#70726b;max-width:470px}
+.about-copy .text-link{display:inline-block;margin-top:17px}
+.contact-section{background:#191a18;color:#f7f7f4;padding:105px 0 110px}
+.contact-inner .eyebrow{color:#a6a79f}
+.contact-inner h2{font-size:clamp(39px,5vw,65px);line-height:1.1;margin:0 0 22px;max-width:700px}
+.contact-inner>p:not(.eyebrow){color:#b5b6af;font-size:14px;margin-bottom:35px}
+.contact-actions{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.button-light{background:#f4f4ef;color:#171717}
+.button-light:hover{background:white}
+.contact-email{font-size:12px;color:#d2d2cc;border-bottom:1px solid #777;padding-bottom:5px}
+.site-footer{min-height:155px;display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:10px;padding-top:30px;padding-bottom:30px}
+.footer-brand{font:600 18px "Manrope",sans-serif;letter-spacing:-.06em}
+.footer-brand span{font-size:9px;vertical-align:top;margin-left:3px}
+.site-footer p,.site-footer small{font-size:10px;color:#85867f;margin:0}
+.back-top{font-size:10px;color:#666}
+.site-footer small{grid-column:1/-1;border-top:1px solid var(--line);padding-top:17px}
+@media(max-width:760px){
+ .site-header{height:72px;padding-inline:5.5%}
+ .site-header nav{display:none}
+ .menu-toggle{display:flex;width:39px;height:39px;border:1px solid var(--line);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+ .menu-toggle span{width:15px;height:1px;background:#222}
+ .mobile-nav{position:fixed;z-index:9;top:72px;left:0;right:0;background:var(--paper);padding:15px 6% 25px;border-bottom:1px solid var(--line)}
+ .mobile-nav:not([hidden]){display:flex;flex-direction:column;gap:18px}
+ .mobile-nav a{font-size:14px}
+ .hero{grid-template-columns:1fr;gap:38px;padding-top:68px;padding-bottom:70px;min-height:0}
+ .hero-copy{padding:0}
+ h1{font-size:clamp(43px,11vw,62px)}
+ .hero-description{font-size:14px}
+ .hero-note{margin-top:42px}
+ .hero-image{justify-self:start;max-width:100%}
+ .hero-image img{height:min(118vw,520px);object-position:center 27%}
+ .hero-index{bottom:16px}
+ .intro-band{padding:48px 0}
+ .intro-inner{grid-template-columns:1fr;gap:12px}
+ .intro-statement{font-size:29px}
+ .content-section,.projects-section{padding-top:85px;padding-bottom:85px}
+ .section-heading{grid-template-columns:1fr;gap:20px;margin-bottom:40px}
+ .section-heading .eyebrow{margin-bottom:0}
+ .section-heading h2{font-size:42px}
+ .section-lead{font-size:13px}
+ .service-item{grid-template-columns:32px 1fr 18px;gap:13px;padding:25px 0}
+ .service-item h3{font-size:21px}
+ .service-item p{font-size:12px}
+ .project-grid{grid-template-columns:1fr;gap:15px}
+ .project-art{height:220px}
+ .project-wide{grid-column:auto;display:block}
+ .project-wide .project-art{height:220px}
+ .about-section{grid-template-columns:1fr;gap:38px;padding-top:85px;padding-bottom:85px}
+ .about-photo{max-width:100%}
+ .about-photo img{height:min(118vw,520px)}
+ .about-copy h2{font-size:44px}
+ .contact-section{padding:80px 0}
+ .contact-inner h2{font-size:44px}
+ .site-footer{grid-template-columns:1fr auto;padding-top:28px;padding-bottom:25px}
+ .site-footer p{grid-column:1/-1;grid-row:2}
+ .back-top{grid-column:2;grid-row:1}
+ .site-footer small{grid-row:3}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* capturas reales de proyectos */
+.project-preview{display:block;margin:18px 0 20px;overflow:hidden;background:#e5e5df;aspect-ratio: 16 / 10;border:1px solid rgba(0,0,0,.07)}
+.project-preview img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .35s ease}
+.project-preview:hover img{transform:scale(1.025)}
+.project-dark .project-preview{border-color:#444}
+.project-link{display:inline-block;margin-top:15px;font-size:11px;border-bottom:1px solid #a4a59d;padding-bottom:3px;color:inherit}
+.project-bottom{padding-bottom:5px}
+@media(max-width:760px){.project-preview{aspect-ratio: 16 / 11}.project-link{margin-top:12px}}
