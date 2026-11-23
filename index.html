@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="johnny roma. arquitectura de soluciones digitales para profesionales, comunidades y pequeños negocios.">
+  <title>johnny roma — soluciones digitales</title>
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="image" href="assets/retrato-johnny.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ajustes puntuales: reloj en la cabecera */
+    .header-clock {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-left: auto;
+      margin-right: 30px;
+      white-space: nowrap;
+      color: #777873;
+    }
+    .header-clock .clock-label {
+      font-size: 9px;
+      letter-spacing: .1em;
+      text-transform: lowercase;
+    }
+    .header-clock .clock-time {
+      font: 500 17px/1 "Manrope", sans-serif;
+      letter-spacing: -.045em;
+      font-variant-numeric: tabular-nums;
+      color: #252622;
+    }
+    @media (max-width: 760px) {
+      .header-clock {
+        margin-left: auto;
+        margin-right: 16px;
+      }
+      .header-clock .clock-label { display: none; }
+      .header-clock .clock-time { font-size: 16px; }
+    }
+    /* Al quitar el retrato duplicado, el texto ocupa el ancho disponible. */
+    .about-section .about-copy {
+      grid-column: 1 / -1;
+      max-width: 700px;
+      margin-inline: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="johnny roma, inicio">
+      <img src="assets/isotipo.png" alt="" width="38" height="38">
+      <span>johnny roma</span>
+    </a>
+
+    <div class="header-clock" aria-label="hora local de colombia">
+      <span class="clock-label">colombia</span>
+      <time id="colombia-clock" class="clock-time" aria-live="off">--:--</time>
+    </div>
+
+    <nav aria-label="navegación principal">
+      <a href="#servicios">servicios</a>
+      <a href="#proyectos">proyectos</a>
+      <a href="#sobre-mi">sobre mí</a>
+      <a class="nav-contact" href="#contacto">contacto <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="navegación móvil" hidden>
+    <a href="#servicios">servicios</a>
+    <a href="#proyectos">proyectos</a>
+    <a href="#sobre-mi">sobre mí</a>
+    <a href="#contacto">contacto ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> arquitectura de soluciones digitales</p>
+        <h1>ideas claras.<br><span>soluciones que funcionan.</span></h1>
+        <p class="hero-description">diseño páginas web y herramientas digitales para profesionales independientes, comunidades y pequeños negocios.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="https://wa.me/573177156116?text=Hola%2C%20Johnny.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20conversar%20contigo%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer">hablemos de tu proyecto <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#proyectos">ver proyectos <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">diseño · desarrollo web · herramientas digitales</p>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/retrato-johnny.png" alt="retrato en blanco y negro de johnny roma" width="1170" height="1350">
+        <figcaption>johnny roma <span>— soluciones digitales</span></figcaption>
+      </figure>
+      <div class="hero-index" aria-hidden="true">01 / 05</div>
+    </section>
+
+    <section class="intro-band">
+      <div class="section-wrap intro-inner">
+        <p class="eyebrow">el punto de partida</p>
+        <p class="intro-statement">la tecnología debe resolver problemas reales. <span>sin complicar lo que puede ser sencillo.</span></p>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">01 — lo que hago</p>
+        <h2>herramientas digitales<br>con un propósito.</h2>
+        <p class="section-lead">cada proyecto empieza por entender qué necesitas y termina con una solución útil, clara y fácil de utilizar.</p>
+      </div>
+      <div class="service-list">
+        <article class="service-item">
+          <span class="service-number">01</span>
+          <div><h3>páginas web</h3><p>sitios ligeros y adaptados a celulares para presentar tu actividad, tus servicios y facilitar el contacto con tus clientes.</p></div>
+          <span class="service-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="service-item">
+          <span class="service-number">02</span>
+          <div><h3>mini aplicaciones</h3><p>herramientas digitales sencillas para organizar información, gestionar tareas o facilitar actividades cotidianas.</p></div>
+          <span class="service-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="service-item">
+          <span class="service-number">03</span>
+          <div><h3>asistentes digitales</h3><p>asistentes personalizados que ayudan a consultar información, preparar contenidos y resolver tareas concretas.</p></div>
+          <span class="service-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section" id="proyectos">
+      <div class="section-wrap">
+        <div class="section-heading projects-heading">
+          <p class="eyebrow">02 — una selección</p>
+          <h2>proyectos en marcha<br>y soluciones en exploración.</h2>
+          <p class="section-lead">una muestra de páginas web y herramientas digitales creadas para necesidades concretas. cada proyecto indica claramente su estado.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-dark">
+            <div class="project-top"><span>01 / ecosistema digital</span><span class="status">en desarrollo</span></div>
+            <a class="project-preview" href="https://koffistudio.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="visitar koffi studio"><img src="assets/koffi-studio.webp" alt="captura de koffi studio, plataforma de producción audiovisual" loading="lazy"></a>
+            <div class="project-bottom"><h3>koffi studio</h3><p>ecosistema propio para organizar y asistir distintas etapas de producción audiovisual, desde la idea hasta los recursos visuales.</p><a class="project-link" href="https://koffistudio.vercel.app" target="_blank" rel="noopener noreferrer">explorar proyecto ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>02 / gestión comercial</span><span class="status">prototipo · demo</span></div>
+            <a class="project-preview" href="https://mueblesmaison.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="visitar muebles maison"><img src="assets/mueblesmaison.webp" alt="captura del panel de gestión de muebles maison" loading="lazy"></a>
+            <div class="project-bottom"><h3>muebles maison</h3><p>prototipo de herramienta para visualizar inventario, ventas, cotizaciones, remisiones y alertas de existencias. utiliza datos de demostración.</p><a class="project-link" href="https://mueblesmaison.vercel.app" target="_blank" rel="noopener noreferrer">explorar demostración ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>03 / asistente personal</span><span class="status">prototipo</span></div>
+            <a class="project-preview" href="https://jh-agenda-personal.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="visitar jh agenda personal"><img src="assets/jh-agenda.webp" alt="captura de agenda personal y actividades" loading="lazy"></a>
+            <div class="project-bottom"><h3>jh agenda personal</h3><p>herramienta de apoyo para organizar compromisos, reuniones y actividades diarias en un contexto institucional.</p><a class="project-link" href="https://jh-agenda-personal.vercel.app" target="_blank" rel="noopener noreferrer">explorar demostración ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>04 / comunidad deportiva</span><span class="status">prototipo</span></div>
+            <a class="project-preview" href="https://maranatha-runners-team-app.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="visitar maranatha runners team"><img src="assets/maranatha-runners.webp" alt="captura de la plataforma maranatha runners team" loading="lazy"></a>
+            <div class="project-bottom"><h3>maranatha runners team</h3><p>espacio digital para una comunidad de atletas con información de entrenamientos, requisitos y actividades deportivas.</p><a class="project-link" href="https://maranatha-runners-team-app.vercel.app" target="_blank" rel="noopener noreferrer">explorar demostración ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>05 / presencia digital</span><span class="status">sitio publicado</span></div>
+            <a class="project-preview" href="https://veredalavega.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="visitar vereda la vega"><img src="assets/vereda-la-vega.webp" alt="captura de la página web vereda la vega" loading="lazy"></a>
+            <div class="project-bottom"><h3>vereda la vega</h3><p>sitio web para presentar la identidad, la historia, el territorio y las iniciativas de una comunidad rural de Jamundí.</p><a class="project-link" href="https://veredalavega.pages.dev/" target="_blank" rel="noopener noreferrer">visitar sitio web ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>06 / sitio web de servicios</span><span class="status">en desarrollo</span></div>
+            <a class="project-preview" href="https://carlos-collazos-web.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="visitar sitio de carlos collazos"><img src="assets/carlos-collazos.webp" alt="captura del sitio web de carlos collazos" loading="lazy"></a>
+            <div class="project-bottom"><h3>carlos collazos</h3><p>sitio web para presentar servicios de fontanería, plomería, enchapes, construcción y mantenimiento.</p><a class="project-link" href="https://carlos-collazos-web.pages.dev/" target="_blank" rel="noopener noreferrer">ver sitio web ↗</a></div>
+          </article>
+        </div>
+        <p class="projects-footnote">los prototipos pueden utilizar datos de ejemplo. las imágenes muestran las interfaces de referencia y cada enlace abre su respectiva demostración o sitio.</p>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="sobre-mi">
+      <div class="about-copy">
+        <p class="eyebrow">03 — quién está detrás</p>
+        <h2>menos vueltas.<br>más soluciones.</h2>
+        <p>soy johnny roma, arquitecto de soluciones digitales. me interesa encontrar formas prácticas de utilizar la tecnología para resolver necesidades concretas.</p>
+        <p>trabajo desde una idea sencilla: una buena solución no tiene que ser complicada para ser valiosa. debe entenderse, servir y facilitar el día a día de quien la utiliza.</p>
+        <a class="text-link" href="#contacto">conversemos <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="section-wrap contact-inner">
+        <p class="eyebrow">04 — contacto</p>
+        <h2>¿tienes una idea<br>que merece hacerse realidad?</h2>
+        <p>cuéntame qué necesitas. podemos empezar por una conversación.</p>
+        <div class="contact-actions">
+          <a class="button button-light" href="https://wa.me/573177156116?text=Hola%2C%20Johnny.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20conversar%20contigo%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer">escríbeme por whatsapp <span aria-hidden="true">↗</span></a>
+          <a class="contact-email" href="mailto:johnnyromacontacto@gmail.com">johnnyromacontacto@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="footer-brand" href="#inicio">johnny roma<span>®</span></a>
+    <p>arquitectura de soluciones digitales</p>
+    <a href="#inicio" class="back-top">volver arriba ↑</a>
+    <small>© <span id="year"></span> johnny roma. todos los derechos reservados.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
